@@ -14,5 +14,12 @@
     <context:component-scan base-package="app"/>
 
 
+        <!-- Configures HTTP Solr server -->
+        <solr:solr-server id="solrServer" url="${solr.server.url}"/>
+
+        <!-- Configures Solr template -->
+        <bean id="solrTemplate" class="org.springframework.data.solr.core.SolrTemplate">
+            <constructor-arg index="0" ref="solrServer"/>
+        </bean>
 
 </beans>
