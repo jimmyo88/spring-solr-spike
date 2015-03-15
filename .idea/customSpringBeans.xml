@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CustomBeanRegistry">
+    <option name="map">
+      <map>
+        <entry key="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#10;&lt;solr:embedded-solr-server xmlns:solr=&quot;http://www.springframework.org/schema/data/solr&quot; id=&quot;solrServer&quot; solrHome=&quot;${solr.solr.home}&quot; /&gt;&#10;&#10;">
+          <value>
+            <list>
+              <CustomBeanInfo>
+                <option name="beanName" value="solrServer" />
+                <option name="beanClassName" value="org.springframework.data.solr.server.support.EmbeddedSolrServerFactoryBean" />
+                <option name="idAttribute" value="id" />
+              </CustomBeanInfo>
+            </list>
+          </value>
+        </entry>
+        <entry key="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#10;&lt;solr:solr-server xmlns:solr=&quot;http://www.springframework.org/schema/data/solr&quot; id=&quot;solrServer&quot; url=&quot;${solr.server.url}&quot; timeout=&quot;100&quot; maxConnections=&quot;100&quot; /&gt;&#10;&#10;">
+          <value>
+            <list>
+              <CustomBeanInfo>
+                <option name="beanName" value="solrServer" />
+                <option name="beanClassName" value="org.springframework.data.solr.server.support.HttpSolrServerFactoryBean" />
+                <option name="idAttribute" value="id" />
+              </CustomBeanInfo>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
